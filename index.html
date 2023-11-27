@@ -1,0 +1,340 @@
+<!----------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------
+------------------------------------- PROYECTO YO PUEDO PROGRAMAR DESEMJA ----------------------------------------
+------------------------------------------------------------------------------------------------------------------
+------------------------------------- CONCEPTO: BLOG / NOTICIA ---------------------------------------------------
+------------------------------------- CONTENIDO: MODA HARAJUKU ---------------------------------------------------
+------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The ALT Wardrobe</title>
+
+    <link rel="shortcut icon" href="css/images/icons/favicon.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- CDN PARA AÑADIR HAMBURGER MENU -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+<body>
+    <!-- HEADER -->
+    <header id="home">
+        <nav>
+            <ul class="flex nav-bar">
+              <li class="logo"> <a href="#" class="flex"><img src="css/images/logo512.png" alt="Logo principal. Cubo rubik 2x2 en color">
+                <h3 class="flex">The ALT <br>Wardrobe</h3></a></li>
+              <input type="checkbox" name="" id="check">
+              <span class="menu flex">
+                <li> <a href="#intro">HARAJUKU STYLE</a></li>
+                <li> <a href="#historia">HISTORIA</a></li>
+                <li> <a href="#estilos">ESTILOS</a></li>
+                <li> <a href="#harajuku-uy">HARAJUKU EN URUGUAY</a></li>
+                <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+              </span>
+              <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SECCIONES -->
+
+    <!-- CARRUSEL PRINCIPAL CON BOOTSTRAP -->
+    <div class="carousel-container">
+
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./css/images/carousels/img_harajuku.jpg" class="d-block w-100" alt="Selección japonesa de voleibol, en las olimpiadas Tokyo 2020">
+              </div>
+              <div class="carousel-item">
+                <img src="./css/images/carousels/img_harajuku2.jpg" class="d-block w-100" alt="Magnus Carlsen y Hikaru Nakamura en campeonato de ajedrez">
+              </div>
+              <div class="carousel-item">
+                <img src="./css/images/carousels/img_harajuku3.jpg" class="d-block w-100" alt="Referente japonés de la moda alternativa Bisuko Ezaki, junto con la diseñadora de Harajuku Conpeitou, y Hiromin">
+              </div>
+              <div class="carousel-item">
+                <img src="./css/images/carousels/img_harajuku4.jpg" class="d-block w-100" alt="Tripulación de los 'Sombrero de paja' de la popular serie animada One Piece">
+              </div>
+              <div class="carousel-item">
+                <img src="./css/images/carousels/img_harajuku5.jpg" class="d-block w-100" alt="Grupo de kpop 'Pentagon'">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+
+    <!-- LINK 1: INTRODUCCIÓN HARAJUKU STYLE -->
+    <div class="section section-y flex" id="intro">
+      <h2>HARAJUKU STYLE</h2>
+      <div class="bg-image">
+        <img src="css/images/resources/harajuku1.jpg" alt="">
+        <div class="image-bgtext">
+          <p>El estilo Harajuku es una moda alternativa japonesa, que nació en el área de la que toma el nombre. La misma
+            se caracteriza por la amplia variedad de estilos no convencionales, inspirado de fuentes diversas e incluso
+            opuestas. Desde lo tradicional hasta lo contemporáneo, desde lo formal hasta lo radical, lo occidental y lo
+            oriental, lo místico, lo fantasioso y lo mundano, la urbe y el campo... aspectos sociales, naturales, humanos;
+            la moda Harajuku resultó en una vasta cultura, llena de subculturas con sus propios valores adjuntos representados
+            en sus formas de vestir, de actuar e incluso en sus estilos de vida.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- LINK 2: HISTORIA -->
+    <div class="section section-t flex" id="historia">
+      <h2>HISTORIA</h2>
+      <div class="bg-image">
+        <img src="css/images/resources/harajuku2.jpg" alt="">
+        <div class="image-bgtext" id="hist-bgtext">
+          <h3>Protesta social</h3>
+          <p id="hist-img-text"> "La moda Harajuku es parte de un proceso de protesta contra las estrictas reglas de la sociedad japonesa
+            y la obligación de unirse a las filas. Cada fin de semana, cientos de jóvenes invaden el distrito de la
+            moda, abandonando el uniforme obligatorio de la semana por prendas coloridas y extravagantes."
+          </p>
+        </div>
+      </div>
+      <p class="text">Esta revolución empezó a tener forma sobre los años 80, pero empezó a ser conocida en el mundo occidental
+        más bien unos 15 o 20 años más tarde. Los jóvenes que iniciaron el Harajuku style vestían mezclando ropa
+        japonesa tradicional (como kimonos y sandalias de madera) con ropa occidental, totalmente personalizada y
+        sin poner atención a las principales tendencias de moda del momento. Vestían de forma libre, contra las
+        normas impuestas por la sociedad, ese era el lema.
+      <br>
+      Texto extraído de: <a class="link-cita" href="https://sakura-japon.com/blogs/infos/estilo-harajuku-y-moda-callejera-japonesa">blog sakura</a>
+      </p>
+    </div>
+    <!-- LINK 3: ESTILOS -->
+    <section class="section flex" id="estilos">
+      <h2>ESTILOS</h2>
+      <p class="text bigger-text">Como era de esperar, al abarcar un espectro amplio de formas de expresión, la moda Harajuku se
+        empezó a dividir en estilos; subconjuntos que engloban los distintos conceptos detrás de cada vestuario,
+        cada actitud, cada cultura. Estilos clásicos de la movida cómo Gyaru, Visual kei y Fairy kei; otros más recientes
+        en el ámbito cómo el Mori kei, Yami kawaii y Dolly kei coexisten dentro del espectro Harajuku, llegando en algunos
+        casos a combinarse para dar lugar a una nueva forma de expresión.
+        <br>
+        Indagaremos en algunos estilos distintivos de la movida, pero a tener en cuenta que hay muchos más estilos,
+        e incluso subestilos o variantes dentro de cada uno de ellos. ¡Es cuestión de investigar al respecto!
+      </p>
+
+       <!-- CARRUSEL CON HTML, CSS Y JS  <= NO LLEGUÉ A TIEMPO A LA IMPLEMENTACIÓN. A falta de responsive y 
+        de sección para añadirlo, queda comentado. 
+
+        Nota: para el carrusel usaré la notación definida en el video de referencia (referenciado en LEEME.txt)
+        pero mantendré mi orden para los nombres de las clases en el resto del documento, por ende la notación
+        variará. Esto con el fin de ir acorde al tutorial, pero sin tener que reestructurar el resto del html/css-->
+        <!-- <div class="style-carousel">
+          <button class="carousel__button carousel__button--left is-hidden">
+            <img src="css/images/resources/left-arrow.svg" alt="">
+          </button>
+          <div class="style-carousel__track-container">
+            <ul class="carousel__track">
+              <li class="carousel__slide current-slide"><img class="carousel__image" src="css/images/resources/decora/decora_kei.jpg" alt=""></li>
+              <li class="carousel__slide"><img class="carousel__image" src="css/images/resources/decora/decora_kei1.jpg" alt=""></li>
+              <li class="carousel__slide"><img class="carousel__image" src="css/images/resources/decora/decora_kei4.jpg" alt=""></li>
+            </ul>
+          </div>
+          <button class="carousel__button carousel__button--right">
+            <img src="css/images/resources/right-arrow.svg" alt="">
+          </button>
+  
+          <div class="carousel__nav flex">
+            <button class="carousel__indicator current-slide"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+          </div>
+        </div> -->
+      
+      
+        <!-- ESTILO DECORA -->
+      <h4>DECORA</h4>
+      
+      <section class="category-left flex">
+        <div class="flex category-container">
+          <p class="left-item">¡Decora! Como su nombre lo indica, las decoraciones son esenciales en este estilo: los estilos Decora
+          destacan por el uso desmesurado de accesorios, y una paleta de colores vibrante, animada. Con sus orígenes
+          en la década del 90', el Decora kei –o simplemente Decora– propone una postura colorida, casi infantil y 
+          definitivamente cargada de información visual para procesar. ¡Un collage multicolor en un lienzo humano!
+          <br> 
+          Para más información sobre el Decora kei:
+          </p>
+          <img src="css/images/resources/decora/decora_kei.jpg" alt="" class="right-item">      
+        </div>
+        <a href="https://fashion-era.com/etegory/decora-kei#:~:text=expression%20and%20individuality.-,The%20Origins%20of%20Decora%20Kei,the%20childlike%20innocence%20of%20youth." class="decora-btn btn left-item">
+            DECORA
+        </a>
+      </section>
+      
+
+      <!-- ESTILO GYARU -->
+      <h4>GYARU</h4>
+      <section class="category-right flex">
+        <div class="flex category-container">
+        <img src="css/images/resources/gyaru/gyaru_kei3.jpg" alt="" class="left-item">
+        <p class="right-item"> El estilo gyaru –o gal, como lo encontrarás en muchos sitios– surgió alrededor de la década de los 80' - 90'
+        dependiendo de la fuente que consultes. El nombre lo tomaron de una marca de jeans llamada 'Gals' la cual en los
+        70' tenía un anuncio que decía "No puedo vivir sin hombres". Más adelante se llamaría así a las mujeres 
+        obsesionadas por la moda.
+        En lo que respecta al estilo, éste está inspirado en la noción de la época de la mujer californiana: piel 
+        bronceada, pelo teñido en tonos de castaño a rubio, o incluso decolorado, maquillaje que enfatice el rostro
+        –en especial la zona de los ojos– y uñas decoradas. Los vestuarios pueden incluir estampados, pieles, 
+        calentadores y prendas de todo tipo dependiendo de las variantes del estilo. El gyaru connota una fuerte noción 
+        de emancipación de la mujer. 
+
+        <br> 
+        Para más información sobre la cultura Gyaru:  
+        </p>
+        
+        </div>
+        <a href="https://www.sugoihunter.com/subculturas-del-mundo-el-gyaru/" class="gyaru-btn btn right-item">
+            GYARU
+        </a>
+      </section>
+      
+      
+      <!-- ESTILO VISUAL KEI -->
+      <div class="flex section section-y">
+        <h4>VISUAL KEI</h4>
+        <section class="category-left flex">
+          <div class="flex category-container">
+          <p class="left-item">El visual kei es quizás uno de los estilos de moda alternativa japoneses más conocidos en el mundo.
+          Tuvo su orígenes en los años 80', en la industria musical; la influencia del glam rock y el punk en los 
+          inicios de la posmodernidad llegó a la escena japonesa, donde las bandas se adueñaron de esa estética y 
+          la llevaron a un nuevo nivel: looks excéntricos en todo sentido, donde predominaban las paletas monocromáticas
+          oscuras, se apoderadon de los escenarios y de los videos musicales de aquellas bandas que decidieron portar 
+          la bandera del visual kei. 
+          <br>
+          Si te interesa el visual kei, entonces te recomiendo buscar bandas de j-rock de distintas épocas. ¡El estilo
+          a tenido diferentes expresiones a lo largo de los años!
+          <br> 
+          Para más información sobre el Visual kei:
+          
+          </p>
+          <img src="css/images/resources/visual kei/visual_kei3.jpg" alt="" class="right-item">
+          </div>
+        <a href="https://janbox.com/blog/visual-kei-fashion/" class="visual-btn btn left-item">
+              VISUAL KEI
+        </a>
+        </section>
+        
+
+        <!-- ESTILO LOLITA -->
+        <h4>LOLITA</h4>
+        <section class="category-right flex">        
+          <div class="flex category-container">
+          <img src="css/images/resources/lolita/lolita3.jpg" alt="" class="left-item">
+          <p class="right-item">Aquellas personas que visten la moda Lolita suelen ocupar vestidos que te llevan a otra época, o a 
+            un mundo de fantasía. ¡Y es que ese es el núcleo de la moda Lolita! Originalmente inspirado en la época
+            victoriana, el rococó y el barroco, este estilo se inspira en vestidos de época o conceptuales y crea
+            outfits encantadores. Los subestilos de Lolita incluyen versiones más clásicas o estándar como el Classic
+            Lolita, otras más tiernas como el Sweet Lolita, estilos oscuros como el Gothic Lolita, aires de princesa
+            con el reconocido Hime Lolita e incluso futurismo de la mano del Cyberlolita. ¡La imaginación es el límite!
+
+          <br> 
+          Para más información sobre la moda Lolita:
+          
+          </p>
+          
+          </div>
+        <a href="https://todas-las-tribus-urbanas.blogspot.com/2015/08/lolitas.html" class="lolita-btn btn right-item">
+            LOLITA
+        </a>
+        </section>
+      </div>
+
+
+      <!-- ESTILO Yami Kawaii -->
+      <div class="flex section section-t">
+        <h4>YAMI KAWAII</h4>
+        <section class="category-left flex">
+          <div class="flex category-container">
+            <p class="left-item">Yami kawaii es un estilo que deriva de otro, el Yume kawaii. Mientras que el primero se enfoca en 
+              los sueños y pesadillas, y prácticamente en la fantasía y los tonos pasteles, el Yami kawaii tiene 
+              un enfoque más dedicado a la salud mental, derivando los patrones del Yume kawaii y añadiéndole elementos
+              estéticos como paletas de colores más apagadas –en especial tonos azules, violetas y negros, aunque también
+              importa la presencia de los colores pastel de su antecesor... en especial del rosado–, el uso de banditas, 
+              parches, jeringas cómo accesorios, maquillaje que potencie una imagen de falta de cuidado –ojeras,
+              piel pálida, heridas o cicatrices, sangrado–, etc. Este movimiento ganó fuerza con el auge de las redes 
+              sociales, pues es un tema muy presente en la sociedad hoy día. Para finalizar, mencionar a Menhera-chan,
+              un personaje creado por Bisuko Ezaki que se volvió insignia dentro de la cultura Yami kawaii.
+            <br> 
+            Para más información sobre el Yami kawaii:
+            </p>
+            <img src="css/images/resources/yami kawaii/yami1.jpg" alt="" class="right-item">
+          </div>
+            <a href="https://artdesignasia.com/yamikawaii-the-dark-side-of-japanese-fashion/#:~:text=What%20is%20Yamikawaii%3F,against%20darker%20themes%20and%20style." class="yami-btn btn left-item">
+              YAMI KAWAII
+            </a>
+            <a href="https://www.instagram.com/menherachan_official/" class="yami-btn btn left-item">MENHERA CHAN</a>
+        </section>
+        
+        <!-- ESTILO SHIRONURI -->
+        <h4>SHIRONURI</h4>
+        <section class="category-right flex">
+          <div class="flex category-container">
+            <img src="css/images/resources/shironuri/shironuri.jpg" alt="" class="left-item">
+            <p class="right-item">Para finalizar esta sección, elegí acercarles el estilo Shironuri, que según el traductor de google viene 
+              a significar "pintura blanca". Aunque probablemente haya una interpretación más exacta, al final del día
+              eso es lo que es el Shironuri. Este solo tiene una regla: pintarse la cara de blanco. De allí en más, se puede
+              proseguir como más desee la persona; desde maquillajes y prendas exéntricas hasta opciones más sobrias, o sombrías.
+              Al prescindir de normas estrictas de estilo, es una opción bastante compatible para fusionar con la 
+              mayoría de los estilos existentes o para crear desde cero. Solo necesitas cumplir la regla principal y listo,
+              estás adentrándote en el mundo del Shironuri.
+  
+            <br> 
+            Para más información sobre Shironuri:
+            </p>
+            
+          </div>
+          <a href="https://cooljapan.es/shironuri/" class="shiro-btn btn right-item">
+            SHIRONURI
+          </a>
+        </section>
+        
+      </div>
+
+
+    </section>
+    <!-- LINK 4: HARAJUKU EN URUGUAY -->
+    <section class="section flex" id="harajuku-uy">
+      <h2>HARAJUKU EN URUGUAY</h2>
+      <p class="text bigger-text">Hasta ahora hemos hablado de la moda alternativa japonesa, un poco de su historia y sus estilos. Lo cierto
+        es que su influencia se ha expandido a nichos sociales de todo el mundo. Los entusiastas de la moda Harajuku
+        –o de alguno de sus estilos– generan comunidad en los países del mundo, incluyendo el que me compete que es
+        Uruguay. No soy participante activa del ámbito local, así que en vez de hablar de ello, prefiero compartir un
+        enlace a un blog dedicado a la movida en este país de latinoamérica.
+      </p>
+      <a href="https://www.marianasierratfe.com/comunidad-en-uruguay" class="btn uy-btn">BLOG DE MARIANA SERRA</a>
+    </section>
+
+    <a href="#home" class="btn up-btn">VOLVER AL INICIO</a>
+
+    <!-- FOOTER -->
+    <footer class="flex">
+      <p>&copy; 2023 The ALT Wardrobe. Todos los derechos reservados.
+      <br>Dirección: Calle de la Moda #123, Ciudad de la Moda
+      <br>Teléfono: (123) 456-7890 | Correo Electrónico: info@modablog.com
+      <br>Footer genérico redactado con ChatGPT</p>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

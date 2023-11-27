@@ -1,0 +1,496 @@
+/* FUENTE DE GOOGLE 'AMIKO' Y 'MONTSERRAT' */
+@import url('https://fonts.googleapis.com/css2?family=Amiko:wght@700&family=Montserrat&display=swap');
+
+/* PALETA DE COLORES */
+:root {
+    --main_color_pink: #f1cef1;
+    --main_color_lavender: #82A0D8;
+    --main_color_violet: #CA8FF8;
+    --secondary_color_teal: #8DDFCB;
+    --secondary_color_yellow: #ECEE81;
+    --secondary_color_green: #B9F987;
+    --text: rgb(27, 24, 24);
+
+    /* UTOPIA.FYI FONT SIZE CALCULATOR CLAMP VARS */
+    --step--2: clamp(0.6075rem, 0.5883rem + 0.0963vw, 0.7038rem);
+    --step--1: clamp(0.7294rem, 0.6878rem + 0.2081vw, 0.9375rem);
+    --step-0: clamp(0.875rem, 0.8rem + 0.375vw, 1.25rem);
+    --step-1: clamp(1.05rem, 0.9268rem + 0.6163vw, 1.6663rem);
+    --step-2: clamp(1.26rem, 1.0678rem + 0.9613vw, 2.2213rem);
+    --step-3: clamp(1.5119rem, 1.2221rem + 1.4488vw, 2.9606rem);
+    --step-4: clamp(1.8144rem, 1.3879rem + 2.1325vw, 3.9469rem);
+    --step-5: clamp(2.1775rem, 1.5609rem + 3.0831vw, 5.2606rem);
+}
+
+/* Clases generales */
+*{
+    list-style: none;
+    font-family: 'Amiko', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: var(--main_color_pink);
+}
+h2{
+    font-size: var(--step-4);
+    margin: 1rem;
+}
+h3{
+    font-size: var(--step-3);
+    margin: 0.5rem;
+}
+h4{
+    font-size: var(--step-2);
+    margin: 0.5rem;
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--step--1);
+}
+.flex {
+    display: flex;
+}
+.section{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2vh 0 10vh ;
+}
+.section-y{
+    background-color: var(--secondary_color_yellow);
+}
+.section-t{
+    background-color: var(--secondary_color_teal);
+}
+.bg-image{
+    width: 80%;
+    position: relative;
+}
+
+.bg-image img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.image-bgtext{
+    position: absolute;
+    background-color: rgba(0,0,0, 0.5);
+    top: 0;
+    height: 100%;
+    width: 37.5%;
+    overflow-x: auto;
+}
+.image-bgtext p{
+    font-size: var(--step-0);
+    color: #fff;
+    padding: 10% 5%;
+}
+.image-bgtext h3{
+    color: #fff;
+    padding: 4vh 10% 0;
+
+}
+.text{
+    width: 80%;
+    margin: 4vh;
+}
+.bigger-text{
+    font-size: var(--step-1);
+}
+.link-cita{
+    text-decoration: none;
+}
+.btn{
+    display: flex;
+    width: 204px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 50px;
+    border-style: none;
+}
+.up-btn{
+    background-color: var(--secondary_color_green);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2;
+}
+::-webkit-scrollbar{
+    width: 0.6rem;
+}
+::-webkit-scrollbar-track{
+    background: var(--main_color_violet);
+}
+::-webkit-scrollbar-thumb{
+    background: var(--secondary_color_green);
+    border-radius: 1rem;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(var(--secondary_color_yellow), var(--secondary_color_green));
+}
+/* Header */
+.nav-bar {
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--main_color_lavender);
+    padding: 12px 20px;
+}
+
+.logo a{
+    text-decoration: none;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img {
+    margin-left: 1vw;
+    width: 75px;
+    height: 75px;
+}
+.logo h3 {
+    padding: 0 1vw;
+    color: var(--text);
+}
+.menu li{
+    padding-left: 30px;
+}
+.menu li a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--text);
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    text-transform: uppercase;
+}
+.menu li a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 1px;
+    background-color: var(--text);
+    transition: 0.15s ease-in-out;
+}
+.menu li a:hover::after{
+    width: 100%;
+}
+.open-menu, .close-menu{
+    position: absolute;
+    color: var(--text);
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+.open-menu{
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+}
+.close-menu{
+    top: 20px;
+    right: 20px;
+}
+#check {
+    display: none;
+}
+
+
+/* Carrusel Bootstrap*/
+.carousel-container{
+    width: 80%;
+    margin: 10vh 10%;
+}
+
+.carousel button {
+    background-color: var(--secondary_color_teal);
+    width: 50px;
+}
+
+/* Sección 1: Introducción */
+
+
+/* Sección 2: Historia */
+#hist-bgtext{
+    right: 0;
+}
+#hist-bgtext p{
+    padding: 5% 10%;
+}
+#hist-img-text{
+    font-style: italic;
+}
+
+/* Sección 3: Estilos */
+.category-left, .category-right{
+    flex-direction: column;
+    width: 80%;
+    padding: 2vh 0 10vh;
+}
+.category-right{
+    align-items: flex-end;
+}
+.left-item{
+    margin-left: 5%;
+}
+.right-item{
+    margin-right: 5%;
+}
+.category-container {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.category-container p{
+    width: clamp(200px, 30vw ,500px);
+}
+
+.category-container img{
+    width: clamp(200px, 30vw ,500px);
+    height: 100%;
+    margin-bottom: 20px;
+}
+.decora-btn, .gyaru-btn, .uy-btn{
+    background-color: var(--secondary_color_yellow);
+}
+.visual-btn, .lolita-btn{
+    background-color: var(--main_color_lavender);
+}
+.yami-btn, .shiro-btn{
+    background-color: var(--main_color_violet);
+}
+.category-left a, .category-right a {
+    margin-bottom: 10px;
+}
+/* Sección 4: HARAJUKU EN URUGUAY */
+#harajuku-uy h2{
+    text-align: center;
+}
+.uy-btn{
+    width: 300px;
+}
+
+/* FOOTER */
+
+footer {
+    padding-top: 15px;
+    justify-content: center;
+    background-color: var(--main_color_lavender);
+    height: 180px;
+}
+
+
+
+/* MEDIA QUERIES */
+
+/* TABLET */
+@media(max-width: 768px){
+    /* Hamburger menu */
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 10;
+        background-color: var(--main_color_lavender);
+        transition: all 0.2s ease-in-out;
+    }
+    .menu li{
+        margin-top: 40px;
+    }
+    .menu li a{
+        padding: 10px;
+    }
+    .open-menu, .close-menu{
+        display: block;
+    }
+    #check:checked ~ .menu {
+        right: 0;
+    }
+
+    /* Sección 3: Estilos */
+    .left-item{
+        margin-left: 0;
+    }
+    .right-item{
+        margin-right: 0;
+    }
+    .category-container p{
+        width: 40vw;
+    }
+    
+    .category-container img{
+        width: 35vw;
+        height: 100%;
+    }
+
+    /* otros */
+    .btn{
+        width: min(30vw,204px);
+        font-size: var(--step-0);
+    }
+    .uy-btn{
+        width: 50vw;
+    }
+}
+
+/* MOBILE */    
+@media(max-width: 425px){
+    
+    /* HAMBURGER MENU */
+    .menu{
+        width: 100%;
+    }
+
+    /* SECCION 1 Y 2 */
+    .bg-image{
+        width: 90%;
+    }
+    .image-bgtext{
+        width: 100%;
+    }
+    .image-bgtext p{
+        font-size: var(--step--1);
+    }
+    .image-bgtext h3{
+        font-size: var(--step-2);
+    }
+    #hist-bgtext p{
+        padding: 2% 10%;
+    }
+
+    /* SECCIÓN 3 */
+    .category-left, .category-right{
+        flex-direction: column;
+        align-items: center;
+    }
+    .category-container img{
+        order: -1;
+    }
+    .category-container{
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .category-container p {
+        width: 100%;
+    }
+
+    /* Otras */
+    .bigger-text{
+        font-size: var(--step-0);
+    }
+    .text{
+        width: 90%;
+    }
+    .carousel button{
+        width: 20px;
+    }
+    .up-btn{
+        width: 100%;
+        bottom: 0;
+        right: 0;
+        height: 5vh;
+        border-radius: 0;
+    }
+}
+
+
+
+
+
+
+
+
+/* Carrusel handmade */
+
+/* EL CÓDIGO DE ESTA SECCIÓN ESTÁ TODO COMENTADO !!! */
+.style-carousel{
+    position: relative;
+    height: min(500px, 30vw);
+    width: min(500px, 30vw);
+    margin: 0 auto;
+}
+
+.carousel__image{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.style-carousel__track-container{
+    height: 100%;
+    position: relative;
+    top: 0;
+    overflow: hidden;
+}
+.carousel__track{
+    height: 100%;
+    position: relative;
+    transition: 250ms ease-in;
+}
+
+.carousel__slide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.carousel__button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100%;
+    width: 10%;
+    background: var(--secondary_color_teal);
+    border: 0;
+    z-index: 1;
+}
+
+.carousel__button--left{
+    left: 0;
+}
+.carousel__button--right{
+    right: 0;
+}
+.carousel__button img{
+    width: 12px;
+}
+
+.carousel__nav{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.carousel__indicator{
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(0, 0, 0, 0.3);
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.carousel__indicator.current-slide{
+    background-color: rgb(0, 0, 0, 0.75);
+}
+
+.is-hidden {
+    display: none;
+}

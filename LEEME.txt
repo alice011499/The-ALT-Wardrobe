@@ -1,0 +1,62 @@
+**********************************************************************************************************************
+**********************************************************************************************************************
+**********************************************  The ALT Wardrobe README  *********************************************
+**********************************************************************************************************************
+**********************************************************************************************************************
+
+Si estás leyendo este documento, ¡Gracias! En cuanto a The ALT Wardrobe, es un proyecto para el curso "Yo Puedo Programar", 
+dictado por DESEM Junior Achievement (Argentina), con apoyo de UNESCO y certificación Microsoft. Yo Puedo Programar 
+es un curso introductorio al desarrollo de páginas web autoasistido, de 16 horas estimadas de duración repartidas en 
+cuatro semanas. Para mí, The ALT Wardrobe es la primera página web que creo. La idea detrás de la misma es el simular
+una página dedicada a la moda alternativa asiática, y su presencia en Uruguay.
+
+
+En este readme adjuntaré distintas fuentes que vaya usando a lo largo de la creación de la página web, una suerte de
+bibliografía de conceptos que no fueron cubiertos en el curso, que me dieron curiosidad, o que requerí indagar más en 
+los mismos, pero que de cualquier modo investigué por mi cuenta. 
+
+
+FUENTES ADICIONALES CONSULTADAS:
+(hubieron más fuentes consultadas pero perdí los links a las mismas, o no las considero relevantes para añadir a esta
+sección)
+
+							** CENTER VERTICALLY **
+*https://www.w3schools.com/howto/howto_css_center-vertical.asp
+
+							** CSS CHECKBOX **
+*https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox
+*https://www.tutorialspoint.com/How-to-check-whether-a-checkbox-is-checked-in-JavaScript#:~:text=In%20JavaScript%2C%20we%20can%20access,on%20the%20checkbox%20is%20checked.
+
+							** CSS CLAMP **
+*https://www.youtube.com/watch?v=VsNAuGkCpQU
+*https://utopia.fyi/ 
+
+							** CSS POSITION **
+*https://developer.mozilla.org/en-US/docs/Web/CSS/position
+
+
+							** CSS SCROLLBAR**
+*https://www.youtube.com/watch?v=lvKK2fs6h4I
+
+							** CSS UNITS **
+*https://www.digitalocean.com/community/tutorials/css-css-units-explained
+
+							** CSS VAR **
+*https://www.w3schools.com/Css/css3_variables.asp
+
+							** FAVICON **
+*https://raulperez.tieneblog.net/que-es-el-favicon-y-como-ponerlo-en-html/  
+
+							** FLEXBOX **
+*https://css-tricks.com/snippets/css/a-guide-to-flexbox/  
+*https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox
+*https://developer.mozilla.org/es/docs/Web/CSS/CSS_flexible_box_layout/Typical_use_cases_of_flexbox
+*https://developer.mozilla.org/en-US/docs/Web/CSS/flex
+
+							** HAMBURGER MENU **
+*https://www.youtube.com/watch?v=QQlxvj_GKss
+
+						** MAKING A CAROUSEL FROM SCRATCH **
+*https://www.youtube.com/watch?v=VYsVOamdB0g (part1)
+*https://www.youtube.com/watch?v=gBzsE0oieio (part2)
+
